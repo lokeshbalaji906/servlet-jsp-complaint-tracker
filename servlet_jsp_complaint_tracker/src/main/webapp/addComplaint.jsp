@@ -16,5 +16,6 @@
 	</form>
 	
 	<a href = "viewComplaints"> View Complaints </a>
+	<a href="./admin/complaints"> Admin Complaints </a>
 </body>
 </html>

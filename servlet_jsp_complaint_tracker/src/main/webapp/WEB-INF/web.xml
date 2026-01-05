@@ -49,4 +49,24 @@
     <servlet-name>viewComplaintServlet</servlet-name>
     <url-pattern>/viewComplaintServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateStatusServlet</display-name>
+    <servlet-name>UpdateStatusServlet</servlet-name>
+    <servlet-class>com.demo.complaint.controller.UpdateStatusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStatusServlet</servlet-name>
+    <url-pattern>/UpdateStatusServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminComplaintServlet</display-name>
+    <servlet-name>AdminComplaintServlet</servlet-name>
+    <servlet-class>com.demo.complaint.controller.AdminComplaintServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminComplaintServlet</servlet-name>
+    <url-pattern>/AdminComplaintServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
