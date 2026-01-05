@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" import="com.demo.complaint.model.User" %>
+    
+<% 
+	User user = (User) session.getAttribute("loggedUser");
+	
+	if(user == null) {
+		response.sendRedirect("login.jsp");
+		return;
+	}
+%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +17,10 @@
 </head>
 <body>
 
-	<h2> Welcome to Dashboard </h2>
-	<p> Complaint management will be available here.</p>
+	<h2> Welcome to <%= user.getName() %> </h2>
+	<p> Role: <%= user.getRole() %>> </p>
+	
+	<a href="logout"> Logout </a> 
 	
 </body>
 </html>
