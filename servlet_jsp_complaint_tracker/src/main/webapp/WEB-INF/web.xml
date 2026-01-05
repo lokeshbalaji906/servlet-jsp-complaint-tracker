@@ -29,4 +29,24 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddComplaintServlet</display-name>
+    <servlet-name>AddComplaintServlet</servlet-name>
+    <servlet-class>com.demo.complaint.controller.AddComplaintServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddComplaintServlet</servlet-name>
+    <url-pattern>/AddComplaintServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>viewComplaintServlet</display-name>
+    <servlet-name>viewComplaintServlet</servlet-name>
+    <servlet-class>com.demo.complaint.controller.viewComplaintServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewComplaintServlet</servlet-name>
+    <url-pattern>/viewComplaintServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

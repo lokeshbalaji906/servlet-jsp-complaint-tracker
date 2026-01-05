@@ -20,6 +20,8 @@
 	<h2> Welcome to <%= user.getName() %> </h2>
 	<p> Role: <%= user.getRole() %>> </p>
 	
+	<a href="addComplaint.jsp"> Add a Complaint </a>
+	
 	<a href="logout"> Logout </a> 
 	
 </body>
