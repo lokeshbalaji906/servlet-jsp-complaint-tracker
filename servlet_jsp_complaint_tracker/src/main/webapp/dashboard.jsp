@@ -20,9 +20,19 @@
 	<h2> Welcome to <%= user.getName() %> </h2>
 	<p> Role: <%= user.getRole() %>> </p>
 	
-	<a href="addComplaint.jsp"> Add a Complaint </a>
-	
-	<a href="logout"> Logout </a> 
-	
+	<ul>
+		<li> <a href="addComplaint.jsp"> Raise Complaint </a> </li>
+		<li> <a href="viewComplaints"> My Complaints </a>
+		
+		<% 
+			if("ADMIN".equals(user.getRole())) {
+		%>
+			<li> <a href="admin/complaints"> Admin Panel </a> </li>
+		<%
+			}
+		%>
+		
+		<li> <a href="logout"> Logout </a> </li> 
+	</ul>
 </body>
 </html>
